@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer>
       <a className="logo" href="#" onClick={() => setPage("shop")}>
-        lá<span>shop.</span>
+        Lá<span>shop.</span>
       </a>
       <span>Chọn điều giản đơn. Sống điều bạn thích.</span>
       <small>© 2026 Lá Shop · Thời Trang & Công Nghệ</small>
