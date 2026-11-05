@@ -1,7 +1,5 @@
-import React from "react";
 import { useShop } from "../../controllers/ShopController";
 import { money } from "../../utils/money";
-import { empty } from "../../models/product";
 import Art from "../components/Art";
 
 export default function CartPage() {
@@ -32,15 +30,13 @@ export default function CartPage() {
                 <div className="quantity">
                   <button
                     disabled={busy}
-                    onClick={() => quantity(p, p.quantity - 1)}
-                  >
+                    onClick={() => quantity(p, p.quantity - 1)}>
                     −
                   </button>
                   <span>{p.quantity}</span>
                   <button
                     disabled={busy || p.quantity >= p.stock || p.quantity >= 99}
-                    onClick={() => quantity(p, p.quantity + 1)}
-                  >
+                    onClick={() => quantity(p, p.quantity + 1)}>
                     +
                   </button>
                 </div>

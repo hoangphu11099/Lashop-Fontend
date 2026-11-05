@@ -1,4 +1,3 @@
-import React from "react";
 import { useShop } from "../../controllers/ShopController";
 import AuthDialog from "./AuthDialog";
 import ProductDialog from "./ProductDialog";

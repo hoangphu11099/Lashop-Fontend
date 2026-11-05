@@ -1,4 +1,3 @@
-import React from "react";
 const symbols = ["◉", "⌨", "◍", "♧", "◒", "▣"];
 export default function Art({ p, index = 0 }) {
   return (

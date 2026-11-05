@@ -1,4 +1,3 @@
-import React from "react";
 import { useShop } from "../../controllers/ShopController";
 import Dialog from "./Dialog";
 
@@ -63,8 +62,7 @@ export default function AuthDialog() {
             onClick={() => {
               setRegister(!register);
               setError("");
-            }}
-          >
+            }}>
             {register ? "Đăng nhập" : "Đăng ký ngay"}
           </button>
         </p>

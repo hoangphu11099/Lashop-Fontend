@@ -1,8 +1,7 @@
-import React from "react";
 import { useShop } from "../../controllers/ShopController";
 
 export default function Header() {
-  const { user, cart, orders, page, setPage, requireLogin, count, logout } =
+  const { user, page, setPage, requireLogin, count, logout } =
     useShop();
   return (
     <>
@@ -17,8 +16,7 @@ export default function Header() {
         <nav>
           <button
             className={page === "shop" ? "selected" : ""}
-            onClick={() => setPage("shop")}
-          >
+            onClick={() => setPage("shop")}>
             Cửa hàng
           </button>
           {user && <button onClick={() => setPage("orders")}>Đơn hàng</button>}
@@ -37,8 +35,7 @@ export default function Header() {
           )}
           <button
             className="cart-button"
-            onClick={() => (user ? setPage("cart") : requireLogin())}
-          >
+            onClick={() => (user ? setPage("cart") : requireLogin())}>
             Giỏ hàng <b>{count}</b>
           </button>
         </div>

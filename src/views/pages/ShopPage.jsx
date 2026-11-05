@@ -1,7 +1,6 @@
-import React from "react";
+
 import { useShop } from "../../controllers/ShopController";
 import { money } from "../../utils/money";
-import { empty } from "../../models/product";
 import Art from "../components/Art";
 
 export default function ShopPage() {

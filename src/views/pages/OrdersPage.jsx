@@ -1,10 +1,8 @@
-import React from "react";
 import { useShop } from "../../controllers/ShopController";
 import { money } from "../../utils/money";
-import { empty } from "../../models/product";
 
 export default function OrdersPage() {
-  const { user, orders, quantity, total } = useShop();
+  const { user, orders } = useShop();
   return (
     <section>
       <div className="eyebrow">ĐƠN HÀNG</div>

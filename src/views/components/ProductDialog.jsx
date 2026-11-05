@@ -1,9 +1,8 @@
-import React from "react";
 import { useShop } from "../../controllers/ShopController";
 import Dialog from "./Dialog";
 
 export default function ProductDialog() {
-  const { category, edit, setEdit, error, busy, saveProduct, setModal } =
+  const { edit, setEdit, error, busy, saveProduct, setModal } =
     useShop();
   return (
     <Dialog busy={busy} onClose={() => setModal(null)}>

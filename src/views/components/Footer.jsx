@@ -1,4 +1,3 @@
-import React from "react";
 import { useShop } from "../../controllers/ShopController";
 
 export default function Footer() {

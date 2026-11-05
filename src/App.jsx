@@ -1,4 +1,3 @@
-import React from "react";
 import { ShopProvider, useShop } from "./controllers/ShopController";
 import Header from "./views/components/Header";
 import Footer from "./views/components/Footer";

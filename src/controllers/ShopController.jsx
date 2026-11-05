@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import { userModel } from "../models/user";
 import { cartModel } from "../models/cart";
 import { orderModel } from "../models/order";
@@ -182,8 +182,7 @@ export function ShopProvider({ children }) {
         checkout,
         removeProduct,
         saveProduct,
-      }}
-    >
+      }}>
       {children}
     </ShopContext.Provider>
   );

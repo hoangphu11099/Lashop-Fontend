@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Dialog({
   children,
   onClose,
@@ -11,21 +9,18 @@ export default function Dialog({
       className="overlay"
       onClick={() => {
         if (!busy) onClose();
-      }}
-    >
+      }}>
       <section
         className="dialog"
         role="dialog"
         aria-modal="true"
         aria-labelledby={titleId}
-        onClick={(event) => event.stopPropagation()}
-      >
+        onClick={(event) => event.stopPropagation()}>
         <button
           className="close"
           aria-label="Đóng"
           disabled={busy}
-          onClick={onClose}
-        >
+          onClick={onClose}>
           ×
         </button>
         {children}

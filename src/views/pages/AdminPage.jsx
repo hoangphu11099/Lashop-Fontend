@@ -1,4 +1,3 @@
-import React from "react";
 import { useShop } from "../../controllers/ShopController";
 import { money } from "../../utils/money";
 import { empty } from "../../models/product";
@@ -7,11 +6,11 @@ export default function AdminPage() {
   const {
     products,
     orders,
-    category,
+    // category,
     setModal,
     setEdit,
     busy,
-    total,
+    // total,
     removeProduct,
   } = useShop();
   return (
@@ -26,8 +25,7 @@ export default function AdminPage() {
           onClick={() => {
             setEdit({ ...empty });
             setModal("product");
-          }}
-        >
+          }}>
           + Tạo sản phẩm
         </button>
       </div>
@@ -66,15 +64,13 @@ export default function AdminPage() {
                     onClick={() => {
                       setEdit({ ...p });
                       setModal("product");
-                    }}
-                  >
+                    }}>
                     Sửa
                   </button>
                   <button
                     className="danger"
                     disabled={busy}
-                    onClick={() => removeProduct(p)}
-                  >
+                    onClick={() => removeProduct(p)}>
                     Xóa
                   </button>
                 </td>

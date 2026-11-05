@@ -1,11 +1,10 @@
-import React from "react";
 import { useShop } from "../../controllers/ShopController";
 import Dialog from "./Dialog";
 import Art from "./Art";
 import { money } from "../../utils/money";
 
 export default function ProductDetailDialog() {
-  const { cart, category, detail, setDetail, busy, quantity } = useShop();
+  const { cart, detail, setDetail, busy, quantity } = useShop();
   return (
     <Dialog titleId="detail-title" onClose={() => setDetail(null)}>
       <Art p={detail} />
@@ -23,8 +22,7 @@ export default function ProductDetailDialog() {
             detail,
             (cart.find((c) => c.id === detail.id)?.quantity || 0) + 1,
           );
-        }}
-      >
+        }}>
         Thêm vào giỏ +
       </button>
     </Dialog>
